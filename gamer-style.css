@@ -163,15 +163,15 @@ nav li {
 }
 
 /* instant section styling */
-.instant-container{
+.instant-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 80px 110px;
 }
 
-.instant-description{
-    padding-right:200px;
+.instant-description {
+    padding-right: 200px;
     margin-bottom: 200px;
 }
 
@@ -182,7 +182,7 @@ nav li {
     margin-bottom: 20px;
 }
 
-.instant-play{
+.instant-play {
     color: #8758F1;
 }
 
@@ -193,16 +193,58 @@ nav li {
     font-weight: 400;
 }
 
-.anniversary-image img{
+.anniversary-image img {
     width: 100%;
     height: auto;
 }
 
-.angela{
+.angela {
     position: relative;
     width: 45%;
-    top: -170px ;
-    left:-80px;
+    top: -170px;
+    left: -80px;
+}
+
+/* all button section */
+
+.all-button{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 30px;
+    margin: 0px 80px;
+    
+}
+
+
+.all-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.all-button button {
+    width: 250px;
+    border-radius:30px;
+    border:none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.genre {
+    margin-left:10px;
+    margin-bottom: 6px;
+    color: #0B0223;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.genre:hover{
+    color:#FF42A5;
+}
+
+button:hover{
+    border: 1px solid #FF42A5;
 }
 
 /* responsive styling for mobile large */
@@ -302,33 +344,47 @@ nav li {
         font-size: 0.7rem;
     }
 
-    .instant-container{
+    .instant-container {
         flex-direction: column;
     }
-    .instant-description{
+
+    .instant-description {
         padding-right: 0px;
         margin-bottom: 30px;
         width: 325px;
     }
 
-    .instant-title{
+    .instant-title {
         text-align: center;
         font-size: 1.8rem;
     }
-    
-    .instant-paragraph{
-        text-align:center;
+
+    .instant-paragraph {
+        text-align: center;
         font-size: 0.7rem;
         padding: 0px 20px;
     }
 
-    .anniversary-image{
+    .anniversary-image {
         width: 300px;
     }
 
-    .angela{
+    .angela {
         top: -130px;
         left: -40px;
+    }
+
+    .all-button{
+        grid-template-columns: repeat(3,1fr);
+        margin:0px;
+    }
+
+    .all-button button{
+        width: 90px;
+    }
+
+    .genre{
+        margin-left: 0px;
     }
 }
 
@@ -401,20 +457,30 @@ nav li {
         align-items: center;
     }
 
-    .instant-container{
+    .instant-container {
         flex-direction: column;
-        margin-top:100px;
+        margin-top: 100px;
     }
-    .instant-description{
+
+    .instant-description {
         padding-right: 0px;
         margin-bottom: 30px;
     }
-    .instant-title{
+
+    .instant-title {
         text-align: center;
         margin-top: 20px;
     }
 
-    .instant-paragraph{
+    .instant-paragraph {
         text-align: center;
+    }
+
+    .all-button{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .all-button button{
+        width:100px;
     }
 }
