@@ -145,11 +145,10 @@ nav li {
 .card-container {
     display: flex;
     gap: 20px;
-    padding:0px 110px;
+    padding: 0px 110px;
 }
 
 .card {
-    /* border: 2px solid blueviolet; */
     width: 60%;
 }
 
@@ -161,6 +160,49 @@ nav li {
     color: #534C64;
     font-size: 1rem;
     font-weight: 500;
+}
+
+/* instant section styling */
+.instant-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 110px;
+}
+
+.instant-description{
+    padding-right:200px;
+    margin-bottom: 200px;
+}
+
+.instant-title {
+    text-align: right;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.instant-play{
+    color: #8758F1;
+}
+
+.instant-paragraph {
+    color: #534C64;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.anniversary-image img{
+    width: 100%;
+    height: auto;
+}
+
+.angela{
+    position: relative;
+    width: 45%;
+    top: -170px ;
+    left:-80px;
 }
 
 /* responsive styling for mobile large */
@@ -238,28 +280,56 @@ nav li {
         border-radius: 24px;
     }
 
-    .card-title{
+    .card-title {
         font-size: 1.5rem;
-        text-align:center;
+        text-align: center;
         margin-top: 60px;
     }
 
-    .card-container{
+    .card-container {
         flex-direction: column;
     }
-    
-    .card-paragraph{
+
+    .card-paragraph {
         font-size: 0.7rem;
     }
 
-    .card{
+    .card {
         width: 100%;
     }
 
-    .card-description{
+    .card-description {
         font-size: 0.7rem;
     }
 
+    .instant-container{
+        flex-direction: column;
+    }
+    .instant-description{
+        padding-right: 0px;
+        margin-bottom: 30px;
+        width: 325px;
+    }
+
+    .instant-title{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    
+    .instant-paragraph{
+        text-align:center;
+        font-size: 0.7rem;
+        padding: 0px 20px;
+    }
+
+    .anniversary-image{
+        width: 300px;
+    }
+
+    .angela{
+        top: -130px;
+        left: -40px;
+    }
 }
 
 /* responsive styling for tablet */
@@ -326,8 +396,25 @@ nav li {
         border-radius: 24px;
     }
 
-    .card-container{
+    .card-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .instant-container{
+        flex-direction: column;
+        margin-top:100px;
+    }
+    .instant-description{
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+    .instant-title{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .instant-paragraph{
+        text-align: center;
     }
 }
