@@ -22,8 +22,8 @@ nav {
     font-weight: 700;
 }
 
-.span-color{
-    color:#FF42A5;
+.span-color {
+    color: #FF42A5;
 }
 
 nav>ul {
@@ -54,32 +54,280 @@ nav li {
     color: red;
 }
 
-/* responsive for mobile large */
+/* styling banner section */
+
+.banner {
+    display: flex;
+    gap: 24px;
+    background-color: rgba(140, 87, 238, 0.03);
+    padding: 0px 120px;
+}
+
+.banner-title {
+    width: 50%;
+    padding: 148px 0px;
+    margin-right: 180px;
+}
+
+.title-play {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.title-goat {
+    font-size: 5.9rem;
+    font-weight: 800;
+    color: #F948B2;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.banner-description {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-button {
+    margin-top: 40px;
+}
+
+.button-signin {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 48px;
+    background: #FF42A5;
+}
+
+.button-rouge {
+    border: none;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 40px;
+    border-radius: 48px;
+    background: #4EC5F7;
+}
+
+
+/* styling card section */
+
+.card-title {
+    color: #0B0223;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.card-span {
+    color: #8758F1;
+}
+
+.card-paragraph {
+    color: #534C64;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    padding:0px 110px;
+}
+
+.card {
+    /* border: 2px solid blueviolet; */
+    width: 60%;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-description {
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* responsive styling for mobile large */
 @media screen and (max-width: 425px) {
+    nav {
+        flex-direction: column;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .nav-title {
+        font-size: 2.2rem;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        margin-top: 60px;
+        font-size: 0.8rem;
+    }
+
+    nav li {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        padding: 0px 40px;
+        background-color: white;
+    }
+
+    .banner-title {
+        text-align: center;
+        width: 330px;
+        margin-right: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: rgba(140, 87, 238, 0.03);
+    }
+
+    .title-play {
+        font-size: 2.4rem;
+        padding-top: 50px;
+    }
+
+    .title-goat {
+        font-size: 3.8rem;
+    }
+
+    .banner-description {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .banner-button {
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .button-signin {
+        font-size: 0.8rem;
+        width: 100px;
+        height: 40px;
+        padding: 10px 20px;
+        border-radius: 24px;
+        margin-right: 10px;
+    }
+
+    .button-rouge {
+        font-size: 0.8rem;
+        width: 110px;
+        height: 40px;
+        padding: 5px 20px;
+        border-radius: 24px;
+    }
+
+    .card-title{
+        font-size: 1.5rem;
+        text-align:center;
+        margin-top: 60px;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+    
+    .card-paragraph{
+        font-size: 0.7rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card-description{
+        font-size: 0.7rem;
+    }
+
+}
+
+/* responsive styling for tablet */
+@media screen and (min-width:425px) and (max-width:768px) {
     nav {
         flex-direction: column;
         margin-top: 100px;
         margin-bottom: 75px;
     }
 
-    nav>ul{
-        flex-direction: column;
+    nav>ul {
         margin-top: 60px;
     }
 
-    nav li{
-        margin-top: 40px;
+    .banner {
+        flex-direction: column-reverse;
+        padding: 0px 40px;
+        background-color: white;
     }
-}
 
-@media screen and (min-width:425px) and (max-width:768px){
-    nav{
+    .banner-title {
+        text-align: center;
+        width: 100%;
+        margin-right: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: rgba(140, 87, 238, 0.03);
+    }
+
+    .title-play {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .title-goat {
+        text-align: center;
+    }
+
+    .banner-description {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .banner-button {
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .button-signin {
+        font-size: 0.8rem;
+        width: 100px;
+        height: 40px;
+        padding: 10px 20px;
+        border-radius: 24px;
+        margin-right: 10px;
+    }
+
+    .button-rouge {
+        font-size: 0.8rem;
+        width: 110px;
+        height: 40px;
+        padding: 5px 20px;
+        border-radius: 24px;
+    }
+
+    .card-container{
         flex-direction: column;
-        margin-top: 100px;
-        margin-bottom: 75px;
-    }
-
-    nav > ul{
-        margin-top: 60px;
+        align-items: center;
     }
 }
